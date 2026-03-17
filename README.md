@@ -11,9 +11,8 @@ RFID Student Voucher System: A web-based solution for student network access usi
 QR Attendance & DTR System: A local-first desktop app built with Electron.js.
 Continuous Growth: Highlighting my ability to learn new frameworks and implement them in tangible projects.
 🛠️ My Technical Toolkit
-Foundations: HTML5, CSS3, JavaScript (ES6+).
-Core Languages: PHP, Dart, Node.js.
-Frameworks & Runtimes: Electron.js, Flutter.
-Data & Auth: MySQL, Firebase, Cloud Firestore.
+Core Languages: HTML5, CSS3, JavaScript (ES6+), Typescript
+Backend: Node.js
+Data & Auth: MySQL, Supabase
 🌱 About This Project
-This portfolio is my personal space to document my growth as a developer. It's built with vanilla CSS to showcase my understanding of responsive design and JavaScript to demonstrate dynamic, interactive UI logic.
+This portfolio is my personal space to document my growth as a developer.
