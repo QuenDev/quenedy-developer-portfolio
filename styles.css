@@ -37,6 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-color);
   z-index: 9999;
   transition: opacity var(--transition-slow), visibility var(--transition-slow);
   overflow: hidden;
