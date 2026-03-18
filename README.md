@@ -1,5 +1,9 @@
 🚀 My personal portfolio as a Fresh Graduate developer. Showcasing my passion for building full-stack web, mobile, and desktop applications through real-world projects, modern UI design, and continuous learning.
 
+## 🌐 Live Demo
+
+[View Live Portfolio Here](https://your-vercel-project-name.vercel.app) _(👈 Update this with your actual Vercel link!)_
+
 Quenedy Pabular | Developer Portfolio 💻
 Welcome! I am a Fresh Graduate developer passionate about creating functional and visually engaging software solutions. This portfolio showcases my journey, the projects I've built during my studies, and my commitment to mastering modern technologies.
 
@@ -16,3 +20,8 @@ Backend: Node.js
 Data & Auth: MySQL, Supabase
 🌱 About This Project
 This portfolio is my personal space to document my growth as a developer.
+
+## 📈 Analytics & Deployment
+
+- **Hosting:** Deployed via [Vercel](https://quenedypabular.vercel.app/) for fast, reliable global CDN hosting.
+- **Analytics:** Integrated with Google Analytics (GA4) (`G-G531DRFYPL`) to track visitor engagement and traffic sources.
