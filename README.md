@@ -2,8 +2,7 @@
 
 ## 🌐 Live Demo
 
-[View Live Portfolio Here](https://quenedypabular.vercel.app) _(👈 Update this with your actual Vercel link!)_
-
+[View Live Portfolio Here](https://quenedypabular.vercel.app) _(👈 
 Quenedy Pabular | Developer Portfolio 💻
 Welcome! I am a Fresh Graduate developer passionate about creating functional and visually engaging software solutions. This portfolio showcases my journey, the projects I've built during my studies, and my commitment to mastering modern technologies.
 
