@@ -31,12 +31,12 @@
     />
     <meta
       property="og:image"
-      content="https://quenedypabular.vercel.app/images/profile.jpg"
+      content="https://quenedypabular.vercel.app/assets/images/profile.jpg"
     />
     <meta property="og:site_name" content="Quenedy Pabular Portfolio" />
 
     <title>Quenedy Pabular - Full Stack Developer</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <!-- ============================================
          PERFORMANCE: Preconnect to external origins
@@ -51,41 +51,30 @@
     <link
       rel="preload"
       as="image"
-      href="images/profile.jpg"
+      href="assets/images/profile.jpg"
       fetchpriority="high"
     />
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Modular Stylesheets (Directly linked for local compatibility) -->
+    <link rel="stylesheet" href="assets/css/base/variables.css" />
+    <link rel="stylesheet" href="assets/css/base/reset.css" />
+    <link rel="stylesheet" href="assets/css/components/loader.css" />
+    <link rel="stylesheet" href="assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections/hero.css" />
+    <link rel="stylesheet" href="assets/css/sections/about.css" />
+    <link rel="stylesheet" href="assets/css/sections/projects.css" />
+    <link rel="stylesheet" href="assets/css/sections/experience.css" />
+    <link rel="stylesheet" href="assets/css/sections/skills.css" />
+    <link rel="stylesheet" href="assets/css/sections/contact.css" />
+    <link rel="stylesheet" href="assets/css/sections/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-    <!-- PERFORMANCE: Non-blocking font loading (display=swap prevents FOIT)
-         Only load the weights we actually use -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- PERFORMANCE: Devicons loaded non-blocking -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
-      />
-    </noscript>
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
 
     <!-- Google Analytics (async - non-blocking) -->
     <script
@@ -181,10 +170,11 @@
             <div class="hero-buttons">
               <a href="#projects" class="btn">View My Projects</a>
               <a
-                href="Quenedy_Pabular_Resume.pdf"
+                href="assets/docs/Resume.pdf"
                 class="btn btn-outline"
                 target="_blank"
-                >Download Resume</a
+                rel="noopener noreferrer"
+                >View Resume</a
               >
             </div>
           </div>
@@ -224,7 +214,7 @@
         <div class="about-container">
           <div class="about-image">
             <img
-              src="images/profile.jpg"
+              src="assets/images/profile.jpg"
               alt="Quenedy Pabular - Full Stack Developer"
               width="700"
               height="918"
@@ -296,35 +286,35 @@ Key Features:
               <div class="carousel">
                 <div class="carousel-slides">
                   <img
-                    src="images/p1-1.jpg"
+                    src="assets/images/p1-1.jpg"
                     alt="Animal Corner Screenshot 1"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p1-2.jpg"
+                    src="assets/images/p1-2.jpg"
                     alt="Animal Corner Screenshot 2"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p1-3.jpg"
+                    src="assets/images/p1-3.jpg"
                     alt="Animal Corner Screenshot 3"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p1-4.jpg"
+                    src="assets/images/p1-4.jpg"
                     alt="Animal Corner Screenshot 4"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p1-5.jpg"
+                    src="assets/images/p1-5.jpg"
                     alt="Animal Corner Screenshot 5"
                     loading="lazy"
                     width="800"
@@ -386,42 +376,42 @@ Key Features:
               <div class="carousel">
                 <div class="carousel-slides">
                   <img
-                    src="images/p2-1.jpg"
+                    src="assets/images/p2-1.jpg"
                     alt="RFID System Screenshot 1"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p2-2.jpg"
+                    src="assets/images/p2-2.jpg"
                     alt="RFID System Screenshot 2"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p2-3.jpg"
+                    src="assets/images/p2-3.jpg"
                     alt="RFID System Screenshot 3"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p2-4.jpg"
+                    src="assets/images/p2-4.jpg"
                     alt="RFID System Screenshot 4"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p2-5.jpg"
+                    src="assets/images/p2-5.jpg"
                     alt="RFID System Screenshot 5"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p2-6.jpg"
+                    src="assets/images/p2-6.jpg"
                     alt="RFID System Screenshot 6"
                     loading="lazy"
                     width="800"
@@ -483,49 +473,49 @@ Key Features:
               <div class="carousel">
                 <div class="carousel-slides">
                   <img
-                    src="images/p3-1.jpg"
+                    src="assets/images/p3-1.jpg"
                     alt="QR Attendance Screenshot 1"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p3-2.jpg"
+                    src="assets/images/p3-2.jpg"
                     alt="QR Attendance Screenshot 2"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p3-3.jpg"
+                    src="assets/images/p3-3.jpg"
                     alt="QR Attendance Screenshot 3"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p3-4.jpg"
+                    src="assets/images/p3-4.jpg"
                     alt="QR Attendance Screenshot 4"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p3-5.jpg"
+                    src="assets/images/p3-5.jpg"
                     alt="QR Attendance Screenshot 5"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p3-6.jpg"
+                    src="assets/images/p3-6.jpg"
                     alt="QR Attendance Screenshot 6"
                     loading="lazy"
                     width="800"
                     height="600"
                   />
                   <img
-                    src="images/p3-7.jpg"
+                    src="assets/images/p3-7.jpg"
                     alt="QR Attendance Screenshot 7"
                     loading="lazy"
                     width="800"
@@ -893,6 +883,14 @@ Key Features:
 
     <!-- PERFORMANCE: Supabase and main script deferred to after HTML parse -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-    <script src="script.js" defer></script>
+    
+    <!-- Modular Scripts (Directly linked for local compatibility) -->
+    <script src="assets/js/modules/particles.js" defer></script>
+    <script src="assets/js/modules/ui.js" defer></script>
+    <script src="assets/js/modules/carousel.js" defer></script>
+    <script src="assets/js/modules/lightbox.js" defer></script>
+    <script src="assets/js/modules/contact.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+
   </body>
 </html>

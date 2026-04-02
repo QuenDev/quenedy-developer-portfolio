@@ -1,27 +1,46 @@
-🚀 My personal portfolio as a Fresh Graduate developer. Showcasing my passion for building full-stack web, mobile, and desktop applications through real-world projects, modern UI design, and continuous learning.
+# 🚀 Quenedy Pabular | Developer Portfolio 💻
+
+My personal portfolio as a Fresh Graduate developer. Showcasing my passion for building full-stack web, mobile, and desktop applications through real-world projects, modern UI design, and continuous learning.
 
 ## 🌐 Live Demo
-
 [View Live Portfolio Here](https://quenedypabular.vercel.app)
 
-Quenedy Pabular | Developer Portfolio 💻
-Welcome! I am a Fresh Graduate developer passionate about creating functional and visually engaging software solutions. This portfolio showcases my journey, the projects I've built during my studies, and my commitment to mastering modern technologies.
+---
 
-🌟 What I've Built
-Modern UI Exploration: Focused on Glassmorphism and clean, responsive layouts.
-Project Highlights:
-Animal Corner: A Flutter mobile application for pet care management.
-RFID Student Voucher System: A web-based solution for student network access using PHP/MySQL.
-QR Attendance & DTR System: A local-first desktop app built with Electron.js.
-Continuous Growth: Highlighting my ability to learn new frameworks and implement them in tangible projects.
-🛠️ My Technical Toolkit
-Core Languages: HTML5, CSS3, JavaScript (ES6+), Typescript
-Backend: Node.js
-Data & Auth: MySQL, Supabase
-🌱 About This Project
-This portfolio is my personal space to document my growth as a developer.
+## 🏗️ Project Architecture (Vanilla Modular)
+This project has been refactored from a monolithic ~4,000 line structure into a **Modular, Scalable, and Vanilla** architecture. This ensures high maintainability without the need for complex build tools.
 
-## 📈 Analytics & Deployment
+### 📂 Folder Structure
+```text
+/
+├── index.html          # Main entry point (Valid HTML5 Skeleton)
+├── assets/
+│   ├── css/            # Modular Stylesheets
+│   │   ├── base/       # Reset, Variables, & Animations
+│   │   ├── components/ # Shared UI (Navbar, Loader, Footer)
+│   │   ├── sections/   # Individual page sections (Hero, About, etc.)
+│   │   └── main.css    # Global orchestration & unified headers
+│   ├── js/             # Modular Logic
+│   │   ├── modules/    # Individual features (Particles, Lightbox, etc.)
+│   │   └── main.js     # Global initialization
+│   ├── images/         # Optimized visual assets
+│   └── docs/           # Resumes & Documents
+└── scripts/            # Development Utility Scripts (Compression, etc.)
+```
 
-- **Hosting:** Deployed via [Vercel](https://quenedypabular.vercel.app/) for fast, reliable global CDN hosting.
-- **Analytics:** Integrated with Google Analytics (GA4) (`G-XW1RT7KE81`) to track visitor engagement and traffic sources.
+### 🛠️ Technical Stack
+- **Frontend:** Vanilla HTML5, CSS3 (Modern Flexbox/Grid), JavaScript (ES6)
+- **Backend/Services:** Supabase (Contact Form), Google Analytics (GA4)
+- **Icons & Fonts:** Devicons, Google Fonts (Inter, Cinzel, Fira Code)
+- **Hosting:** [Vercel](https://quenedypabular.vercel.app/)
+
+## 🚀 Development & Maintenance
+- **Adding Styles**: Create a new `.css` file in `assets/css/sections/` and link it in the `<head>` of `index.html`.
+- **Adding Logic**: Create a new `.js` file in `assets/js/modules/` and initialize it in `assets/js/main.js`.
+- **Image Optimization**: Use the provided scripts in `scripts/` (requires `sharp`) to compress assets for better LCP.
+
+## 📈 Analytics
+- Integrated with Google Analytics (GA4) (`G-XW1RT7KE81`) to track visitor engagement.
+
+---
+*Built with ❤️ by Quenedy Pabular*

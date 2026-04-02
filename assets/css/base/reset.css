@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.wrapper {
+  position: relative;
+  overflow-x: clip;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: clip;
+}
+
+/* PERFORMANCE: hint browser about paint containment on animated elements */
+.float-icon,
+.loader-dots span,
+.scroll-line {
+  will-change: transform;
+  contain: layout style;
+}
+
+/* CLS prevention: reserve space for profile image before it loads */
+.about-image img {
+  aspect-ratio: 700 / 918;
+}
+
+section {
+  padding: 100px 10% 80px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes premiumEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+}
