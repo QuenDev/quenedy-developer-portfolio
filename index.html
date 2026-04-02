@@ -13,7 +13,7 @@
       content="Quenedy Pabular, Full Stack Developer, Web Development, Mobile Development, Portfolio, HTML, CSS, JavaScript, React, Flutter"
     />
     <meta name="author" content="Quenedy Pabular" />
-    <meta name="theme-color" content="#black" />
+    <meta name="theme-color" content="#0a0a0f" />
 
     <!-- Canonical Link -->
     <link rel="canonical" href="https://quenedypabular.vercel.app/" />
@@ -38,33 +38,66 @@
     <title>Quenedy Pabular - Full Stack Developer</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
-    <!-- Google tag (gtag.js) -->
+    <!-- ============================================
+         PERFORMANCE: Preconnect to external origins
+         Reduces DNS + TLS handshake time for fonts/CDNs
+    ============================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+
+    <!-- PERFORMANCE: Preload LCP image so browser fetches it ASAP -->
+    <link
+      rel="preload"
+      as="image"
+      href="images/profile.jpg"
+      fetchpriority="high"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- PERFORMANCE: Non-blocking font loading (display=swap prevents FOIT)
+         Only load the weights we actually use -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- PERFORMANCE: Devicons loaded non-blocking -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+      />
+    </noscript>
+
+    <!-- Google Analytics (async - non-blocking) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-G531DRFYPL"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag() { dataLayer.push(arguments); }
       gtag("js", new Date());
-
       gtag("config", "G-XW1RT7KE81");
     </script>
-
-    <!-- Supabase CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
@@ -190,7 +223,15 @@
       <section id="about">
         <div class="about-container">
           <div class="about-image">
-            <img src="images/profile.jpg" alt="Quenedy Pabular" />
+            <img
+              src="images/profile.jpg"
+              alt="Quenedy Pabular - Full Stack Developer"
+              width="700"
+              height="918"
+              fetchpriority="high"
+              loading="eager"
+              decoding="async"
+            />
           </div>
           <div class="about-text">
             <div class="about-glass-card">
@@ -258,26 +299,36 @@ Key Features:
                     src="images/p1-1.jpg"
                     alt="Animal Corner Screenshot 1"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p1-2.jpg"
                     alt="Animal Corner Screenshot 2"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p1-3.jpg"
                     alt="Animal Corner Screenshot 3"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p1-4.jpg"
                     alt="Animal Corner Screenshot 4"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p1-5.jpg"
                     alt="Animal Corner Screenshot 5"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <button class="carousel-btn prev" aria-label="Previous image">
@@ -338,31 +389,43 @@ Key Features:
                     src="images/p2-1.jpg"
                     alt="RFID System Screenshot 1"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p2-2.jpg"
                     alt="RFID System Screenshot 2"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p2-3.jpg"
                     alt="RFID System Screenshot 3"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p2-4.jpg"
                     alt="RFID System Screenshot 4"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p2-5.jpg"
                     alt="RFID System Screenshot 5"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p2-6.jpg"
                     alt="RFID System Screenshot 6"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <button class="carousel-btn prev" aria-label="Previous image">
@@ -423,36 +486,50 @@ Key Features:
                     src="images/p3-1.jpg"
                     alt="QR Attendance Screenshot 1"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p3-2.jpg"
                     alt="QR Attendance Screenshot 2"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p3-3.jpg"
                     alt="QR Attendance Screenshot 3"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p3-4.jpg"
                     alt="QR Attendance Screenshot 4"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p3-5.jpg"
                     alt="QR Attendance Screenshot 5"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p3-6.jpg"
                     alt="QR Attendance Screenshot 6"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                   <img
                     src="images/p3-7.jpg"
                     alt="QR Attendance Screenshot 7"
                     loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <button class="carousel-btn prev" aria-label="Previous image">
@@ -814,6 +891,8 @@ Key Features:
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- PERFORMANCE: Supabase and main script deferred to after HTML parse -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

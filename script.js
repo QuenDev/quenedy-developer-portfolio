@@ -12,8 +12,11 @@ const initLoaderParticles = () => {
   canvas.height = window.innerHeight;
 
   const particlesArray = [];
-  const numberOfParticles = 80;
-  const maxDistance = 150;
+  // Reduced from 80 → 50 for faster first paint
+  const numberOfParticles = window.innerWidth < 768 ? 30 : 50;
+  const maxDistance = 130;
+  let animId = null;
+  let stopped = false;
 
   class Particle {
     constructor() {
@@ -67,6 +70,7 @@ const initLoaderParticles = () => {
   };
 
   const animate = () => {
+    if (stopped) return;
     ctx.fillStyle = "#0a0a0f";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     particlesArray.forEach((p) => {
@@ -74,7 +78,16 @@ const initLoaderParticles = () => {
       p.draw();
     });
     connect();
-    requestAnimationFrame(animate);
+    animId = requestAnimationFrame(animate);
+  };
+
+  // Expose stop so loader hide can cancel it
+  window._stopLoaderParticles = () => {
+    stopped = true;
+    if (animId) cancelAnimationFrame(animId);
+    // Free canvas memory
+    canvas.width = 1;
+    canvas.height = 1;
   };
 
   init();
@@ -96,9 +109,11 @@ const initBackgroundParticles = () => {
   bgCanvas.width = window.innerWidth;
   bgCanvas.height = window.innerHeight;
 
+  const isMobile = window.innerWidth < 768;
+  // Reduced from 100 → 60 desktop, 30 mobile — saves significant CPU on paint
+  const COUNT = isMobile ? 30 : 60;
+  const MAX_DIST = isMobile ? 120 : 160;
   const bgParticles = [];
-  const COUNT = 100;
-  const MAX_DIST = 160;
 
   class BgParticle {
     constructor() {
@@ -162,25 +177,42 @@ const initBackgroundParticles = () => {
   init();
   animate();
 
+  let resizeTimer;
   window.addEventListener("resize", () => {
-    bgCanvas.width = window.innerWidth;
-    bgCanvas.height = window.innerHeight;
-    init();
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      bgCanvas.width = window.innerWidth;
+      bgCanvas.height = window.innerHeight;
+      init();
+    }, 200);
   });
 };
 
 // ── UI Interactions & Effects ────────────────────────────────────────────────
 const initUIEffects = () => {
-  // Loader visibility
+  // Loader — hide as soon as page loads, minimum 800ms for brand feel
   const hideLoader = () => {
     const loader = document.getElementById("loader");
     if (loader) {
       loader.classList.add("hidden");
       document.body.style.overflow = "";
+      // Stop loader canvas animation to free GPU resources
+      setTimeout(() => {
+        if (window._stopLoaderParticles) window._stopLoaderParticles();
+      }, 650); // after fade-out transition completes
     }
   };
-  window.addEventListener("load", () => setTimeout(hideLoader, 2500));
-  setTimeout(hideLoader, 5000); // Fallback
+
+  const MIN_LOADER_MS = 800; // keeps brand feel without blocking LCP
+  const loaderStart = Date.now();
+  const scheduleHide = () => {
+    const elapsed = Date.now() - loaderStart;
+    const remaining = Math.max(0, MIN_LOADER_MS - elapsed);
+    setTimeout(hideLoader, remaining);
+  };
+
+  window.addEventListener("load", scheduleHide);
+  setTimeout(hideLoader, 3000); // Absolute safety fallback
 
   // Typing Effect
   const roles = [
@@ -502,7 +534,12 @@ const initContactForm = () => {
 // ── App Initialization ───────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
   initLoaderParticles();
-  initBackgroundParticles();
+  // Background particles deferred until browser is idle — doesn't block LCP
+  if ("requestIdleCallback" in window) {
+    requestIdleCallback(() => initBackgroundParticles(), { timeout: 2000 });
+  } else {
+    setTimeout(initBackgroundParticles, 300);
+  }
   initUIEffects();
   initCarousels();
   initLightbox();
