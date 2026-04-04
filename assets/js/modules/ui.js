@@ -27,7 +27,7 @@ const initUIEffects = () => {
   setTimeout(hideLoader, 3000); // safety fallback
 
   // 2. Typing Effect
-  const roles = ["Fresh Graduate", "Aspiring Full-Stack Developer", "Problem Solver"];
+  const roles = ["Fresh Graduate", "Next.js & Express.js Developer", "Full-Stack Enthusiast"];
   let roleIdx = 0, charIdx = 0, isDeleting = false;
   const typingEl = document.getElementById("typing-role");
 
