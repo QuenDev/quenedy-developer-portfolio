@@ -11,8 +11,9 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "devDependencies": {
+  "dependencies": {
     "html-minifier-terser": "^7.2.0",
     "sharp": "^0.34.5"
-  }
+  },
+  "devDependencies": {}
 }
