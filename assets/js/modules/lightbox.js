@@ -29,7 +29,16 @@ const initLightbox = () => {
       updateTechStack(p.getAttribute("data-tech"), lbTech);
 
       lb.querySelector(".lightbox-gallery").className = `lightbox-gallery ${p.getAttribute("data-type") || ""}-frame`;
-      open();
+      
+      if (currentImages.length > 0) {
+        lb.querySelector(".lightbox-gallery").style.display = "flex";
+        open();
+      } else {
+        // Handle coming soon without images
+        lb.querySelector(".lightbox-gallery").style.display = "none";
+        lb.querySelector(".lightbox-container").classList.add("no-gallery");
+        open();
+      }
     });
   });
 
@@ -70,6 +79,7 @@ const initLightbox = () => {
 
   const close = () => {
     lb.classList.remove("active");
+    lb.querySelector(".lightbox-container").classList.remove("no-gallery");
     document.body.style.overflow = "";
   };
 

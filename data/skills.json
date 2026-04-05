@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Core Languages",
+    "skills": [
+      { "name": "HTML5", "icon": "devicon-html5-plain" },
+      { "name": "CSS3", "icon": "devicon-css3-plain" },
+      { "name": "JavaScript", "icon": "devicon-javascript-plain" },
+      { "name": "TypeScript", "icon": "devicon-typescript-plain" }
+    ]
+  },
+  {
+    "category": "Frontend & Frameworks",
+    "skills": [
+      { "name": "React", "icon": "devicon-react-original" },
+      { "name": "Next.js", "icon": "devicon-nextjs-plain" },
+      { "name": "Flutter", "icon": "devicon-flutter-plain" },
+      { "name": "Electron.js", "icon": "devicon-electron-original" }
+    ]
+  },
+  {
+    "category": "Backend & Services",
+    "skills": [
+      { "name": "Node.js", "icon": "devicon-nodejs-plain" },
+      { "name": "Express.js", "icon": "devicon-express-original" },
+      { "name": "Firebase", "icon": "devicon-firebase-plain" },
+      { "name": "Supabase", "icon": "devicon-supabase-plain" }
+    ]
+  },
+  {
+    "category": "Databases",
+    "skills": [
+      { "name": "MySQL", "icon": "devicon-mysql-plain" },
+      { "name": "PostgreSQL", "icon": "devicon-postgresql-plain" }
+    ]
+  },
+  {
+    "category": "Tools & Deployment",
+    "skills": [
+      { "name": "Git", "icon": "devicon-git-plain" },
+      { "name": "Vercel", "icon": "devicon-vercel-original" },
+      { "name": "Render", "icon": "render" }
+    ]
+  }
+]

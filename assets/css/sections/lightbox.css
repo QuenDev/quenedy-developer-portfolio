@@ -189,6 +189,43 @@
 
 .source-button i { font-size: 1.1rem; }
 
+.lightbox-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.source-button.live {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.8), rgba(109, 40, 217, 0.9));
+  border-color: #a78bfa;
+  color: #ffffff;
+}
+
+.source-button.live:hover {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
+}
+
+.lightbox-container.no-gallery {
+  justify-content: center;
+  max-width: 800px;
+}
+
+.lightbox-container.no-gallery .lightbox-details {
+  flex: 1;
+  text-align: center;
+}
+
+.lightbox-container.no-gallery .tech-tags-container,
+.lightbox-container.no-gallery .lightbox-actions {
+  justify-content: center;
+}
+
+.lightbox-container.no-gallery .lightbox-tech h3::after {
+  display: none;
+}
+
 .lightbox-gallery {
   flex: 0 0 60%;
   position: relative;

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Quenedy Pabular - Full Stack Developer Portfolio. Specializing in Web and Mobile Application Development."
+    />
+    <meta
+      name="keywords"
+      content="Quenedy Pabular, Full Stack Developer, Web Development, Mobile Development, Portfolio, HTML, CSS, JavaScript, React, Flutter"
+    />
+    <meta name="author" content="Quenedy Pabular" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://quenedypabular.vercel.app/" />
+
+    <!-- Open Graph (OG) / LinkedIn / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://quenedypabular.vercel.app/" />
+    <meta
+      property="og:title"
+      content="Quenedy Pabular | Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Quenedy Pabular, a passionate Full Stack Developer specializing in Web and Mobile applications."
+    />
+    <meta
+      property="og:image"
+      content="https://quenedypabular.vercel.app/assets/images/profile.jpg"
+    />
+    <meta property="og:site_name" content="Quenedy Pabular Portfolio" />
+
+    <title>Quenedy Pabular - Full Stack Developer</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- PERFORMANCE: Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+
+    <!-- PERFORMANCE: Preload LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/profile.jpg"
+      fetchpriority="high"
+    />
+
+    <!-- Modular Stylesheets -->
+    <link rel="stylesheet" href="assets/css/base/variables.css" />
+    <link rel="stylesheet" href="assets/css/base/reset.css" />
+    <link rel="stylesheet" href="assets/css/components/loader.css" />
+    <link rel="stylesheet" href="assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections/hero.css" />
+    <link rel="stylesheet" href="assets/css/sections/about.css" />
+    <link rel="stylesheet" href="assets/css/sections/projects.css" />
+    <link rel="stylesheet" href="assets/css/sections/experience.css" />
+    <link rel="stylesheet" href="assets/css/sections/skills.css" />
+    <link rel="stylesheet" href="assets/css/sections/contact.css" />
+    <link rel="stylesheet" href="assets/css/sections/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G531DRFYPL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XW1RT7KE81");
+    </script>
+  </head>
+
+  <body>
+    {{LOADER}}
+
+    <div class="wrapper">
+      <canvas id="bgCanvas"></canvas>
+      
+      {{NAVBAR}}
+
+      <main>
+        {{HERO}}
+        {{ABOUT}}
+        {{PROJECTS}}
+        {{EXPERIENCE}}
+        {{SKILLS}}
+        {{CONTACT}}
+      </main>
+
+      {{FOOTER}}
+    </div>
+
+    {{LIGHTBOX}}
+
+    <!-- PERFORMANCE: Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="assets/js/modules/particles.js" defer></script>
+    <script src="assets/js/modules/ui.js" defer></script>
+    <script src="assets/js/modules/carousel.js" defer></script>
+    <script src="assets/js/modules/lightbox.js" defer></script>
+    <script src="assets/js/modules/contact.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

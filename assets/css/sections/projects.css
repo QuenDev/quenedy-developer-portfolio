@@ -191,6 +191,12 @@
   border-top: 1px solid rgba(139, 92, 246, 0.1);
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .view-project-btn {
   background: transparent;
   border: none;
@@ -222,7 +228,78 @@
   background: rgba(139, 92, 246, 0.22); border-color: #8b5cf6; color: #ffffff;
 }
 
-.github-btn svg { width: 14px; height: 14px; fill: currentColor; }
+.live-btn {
+  display: inline-flex;
+  align-items: center; gap: 6px; font-family: "Fira Code", monospace; font-size: 0.75rem; color: #ffffff; background: rgba(139, 92, 246, 0.82); border: 1px solid #8b5cf6; border-radius: 20px; padding: 5px 14px; text-decoration: none;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+}
+
+.live-btn:hover {
+  background: #8b5cf6; box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); transform: translateY(-1px);
+}
+
+.github-btn svg, .live-btn svg { width: 14px; height: 14px; fill: currentColor; }
+
+/* Status Badges */
+.status-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  color: #c4b5fd;
+  font-family: "Fira Code", monospace;
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  z-index: 2;
+  letter-spacing: 0.5px;
+}
+
+.status-badge i { margin-right: 4px; font-size: 0.7rem; }
+
+/* Project Placeholder */
+.project-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(20, 20, 30, 0.8), rgba(10, 10, 15, 0.95));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-placeholder::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+  animation: pulse 8s infinite alternate;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  color: rgba(139, 92, 246, 0.25);
+  filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.2));
+}
+
+.placeholder-text {
+  font-family: "Cinzel", serif;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+  0% { transform: translate(-10%, -10%) scale(1); }
+  100% { transform: translate(10%, 10%) scale(1.1); }
+}
 
 @media (max-width: 768px) {
   #projects { padding: 60px 20px; }
