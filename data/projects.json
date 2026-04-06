@@ -3,7 +3,7 @@
     "id": "ai-career-launchpad",
     "title": "AI Career Launchpad 🚀",
     "category": "AI Web App",
-    "status": "In Active Development",
+    "status": "In Active Deployment",
     "description": "Full stack web app built with Next.js, Express, Supabase and Groq AI.\n\nAnalyzes resumes against job descriptions and returns a match score with detailed feedback.",
     "longDescription": "Full stack web app built with Next.js, Express, Supabase and Groq AI.\n\nAnalyzes resumes against job descriptions and returns a match score with detailed feedback.\n\nKey Features:\n▹ AI-powered resume analysis & scoring\n▹ Real-time feedback for resume optimization\n▹ Job description matching & gap analysis\n▹ Modern dashboard with Next.js & Supabase",
     "tech": [
@@ -16,8 +16,8 @@
     "github": "https://github.com/QuenDev/ai-career-launchpad",
     "live": "https://ai-career-launchpad.vercel.app/",
     "type": "desktop",
-    "comingSoon": true,
-    "images": []
+    "comingSoon": false,
+    "images": ["assets/images/p4-1.jpg"]
   },
   {
     "id": "rfid-voucher-system",

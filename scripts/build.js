@@ -31,12 +31,15 @@ function generateProjectCards(projects) {
       ? p.images.map(img => `<img src="${img}" alt="${p.title}" loading="lazy" width="800" height="600" />`).join('\n          ')
       : '';
 
+    const statusBadgeHtml = p.status 
+      ? `<div class="status-badge">
+                  <i class="${p.tech[4]?.icon || ''}"></i>
+                  ${p.status}
+                </div>`
+      : '';
+
     const imageSection = p.comingSoon 
       ? `<div class="project-placeholder">
-                <div class="status-badge">
-                  <i class="${p.tech[4]?.icon || ''}"></i>
-                  ${p.status || 'Coming Soon'}
-                </div>
                 <div class="placeholder-icon">
                   <i class="${p.tech[0]?.icon || ''}"></i>
                 </div>
@@ -69,6 +72,7 @@ function generateProjectCards(projects) {
             data-type="${p.type || 'desktop'}"
           >
             <div class="project-image">
+              ${statusBadgeHtml}
               ${imageSection}
               <span class="project-category">${p.category}</span>
             </div>
