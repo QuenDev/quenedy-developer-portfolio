@@ -17,7 +17,13 @@
     "live": "https://ai-career-launchpad.vercel.app/",
     "type": "desktop",
     "comingSoon": false,
-    "images": ["assets/images/p4-1.jpg"]
+    "images": [
+      "assets/images/p4-1.jpg",
+      "assets/images/p4-2.jpg",
+      "assets/images/p4-3.jpg",
+      "assets/images/p4-4.jpg",
+      "assets/images/p4-5.jpg"
+    ]
   },
   {
     "id": "rfid-voucher-system",
