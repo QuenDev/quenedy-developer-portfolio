@@ -1,17 +1,31 @@
 [
   {
     "id": "ai-career-launchpad",
-    "title": "AI Career Launchpad 🚀",
+    "title": "AI Career Launchpad",
     "category": "AI Web App",
-    "status": "In Active Deployment",
-    "description": "Full stack web app built with Next.js, Express, Supabase and Groq AI.\n\nAnalyzes resumes against job descriptions and returns a match score with detailed feedback.",
-    "longDescription": "Full stack web app built with Next.js, Express, Supabase and Groq AI.\n\nAnalyzes resumes against job descriptions and returns a match score with detailed feedback.\n\nKey Features:\n▹ AI-powered resume analysis & scoring\n▹ Real-time feedback for resume optimization\n▹ Job description matching & gap analysis\n▹ Modern dashboard with Next.js & Supabase",
+    "description": "Analyzes resumes against job descriptions and returns ATS-style scoring.",
+    "longDescription": "AI Career Launchpad analyzes resumes against job descriptions and generates ATS-style match scores, keyword gap detection, and structured, actionable feedback to improve job application success.\n\nIt helps users understand exactly what’s missing in their resume and how to optimize it for better chances of passing applicant tracking systems and landing interviews.\n\nKey Features:\n▹ AI-powered resume analysis & ATS scoring\n▹ Keyword gap detection between resume and job description\n▹ Real-time structured feedback for resume improvement\n▹ Shareable results and clean dashboard experience",
     "tech": [
-      { "name": "Next.js", "icon": "devicon-nextjs-plain" },
-      { "name": "TypeScript", "icon": "devicon-typescript-plain" },
-      { "name": "Express", "icon": "devicon-express-original" },
-      { "name": "Supabase", "icon": "devicon-supabase-plain" },
-      { "name": "Groq AI", "icon": "devicon-matcha-plain" }
+      {
+        "name": "Next.js",
+        "icon": "devicon-nextjs-plain"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "devicon-typescript-plain"
+      },
+      {
+        "name": "Express",
+        "icon": "devicon-express-original"
+      },
+      {
+        "name": "Supabase",
+        "icon": "devicon-supabase-plain"
+      },
+      {
+        "name": "Groq AI",
+        "icon": "devicon-matcha-plain"
+      }
     ],
     "github": "https://github.com/QuenDev/ai-career-launchpad",
     "live": "https://ai-career-launchpad.vercel.app/",
@@ -32,11 +46,26 @@
     "description": "Automated network access system using RFID emulation for instant authentication.",
     "longDescription": "Successfully delivered network access system to ISU-Cauayan MIS Office.\n\nKey Features:\n▹ Managed 1000+ imported student records fully tested\n▹ Real-time RFID verification to control access\n▹ Admin dashboard for tracking usage and records\n▹ Instant student identification & voucher issuance",
     "tech": [
-      { "name": "PHP", "icon": "devicon-php-plain" },
-      { "name": "MySQL", "icon": "devicon-mysql-plain" },
-      { "name": "HTML5", "icon": "devicon-html5-plain" },
-      { "name": "CSS3", "icon": "devicon-css3-plain" },
-      { "name": "JavaScript", "icon": "devicon-javascript-plain" }
+      {
+        "name": "PHP",
+        "icon": "devicon-php-plain"
+      },
+      {
+        "name": "MySQL",
+        "icon": "devicon-mysql-plain"
+      },
+      {
+        "name": "HTML5",
+        "icon": "devicon-html5-plain"
+      },
+      {
+        "name": "CSS3",
+        "icon": "devicon-css3-plain"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "devicon-javascript-plain"
+      }
     ],
     "github": "https://github.com/QuenDev/rfid-voucher-system",
     "type": "desktop",
@@ -56,11 +85,26 @@
     "description": "Local-First Desktop App for professional attendance tracking and DTR management.",
     "longDescription": "Offline-first desktop app supporting up to 50 employees with zero data loss using atomic JSON writes.\n\nKey Features:\n▹ No internet connection required\n▹ QR-based attendance tracking & session mapping\n▹ Automatic working-hour DTR calculations\n▹ Dashboard with secure login & import/export data",
     "tech": [
-      { "name": "Electron.js", "icon": "devicon-electron-original" },
-      { "name": "Node.js", "icon": "devicon-nodejs-plain" },
-      { "name": "HTML5", "icon": "devicon-html5-plain" },
-      { "name": "CSS3", "icon": "devicon-css3-plain" },
-      { "name": "JavaScript", "icon": "devicon-javascript-plain" }
+      {
+        "name": "Electron.js",
+        "icon": "devicon-electron-original"
+      },
+      {
+        "name": "Node.js",
+        "icon": "devicon-nodejs-plain"
+      },
+      {
+        "name": "HTML5",
+        "icon": "devicon-html5-plain"
+      },
+      {
+        "name": "CSS3",
+        "icon": "devicon-css3-plain"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "devicon-javascript-plain"
+      }
     ],
     "github": "https://github.com/QuenDev/qr-attendance-dtr-system",
     "type": "desktop",
@@ -81,9 +125,18 @@
     "description": "Comprehensive veterinary solution for pet profiling and appointment management.",
     "longDescription": "Multi-user Flutter app supporting pet owner and clinic accounts, previously published on Google Play Store.\n\nKey Features:\n▹ Pet profiles with photos and medical history\n▹ Smart appointment scheduling and real-time notifications\n▹ Offline data persistence\n▹ Passed Google's full app review process",
     "tech": [
-      { "name": "Flutter", "icon": "devicon-flutter-plain" },
-      { "name": "Firebase", "icon": "devicon-firebase-plain" },
-      { "name": "Dart", "icon": "devicon-dart-plain" }
+      {
+        "name": "Flutter",
+        "icon": "devicon-flutter-plain"
+      },
+      {
+        "name": "Firebase",
+        "icon": "devicon-firebase-plain"
+      },
+      {
+        "name": "Dart",
+        "icon": "devicon-dart-plain"
+      }
     ],
     "github": "https://github.com/QuenDev/animal-corner-mobile-app",
     "type": "phone",
