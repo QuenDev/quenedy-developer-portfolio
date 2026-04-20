@@ -1,5 +1,39 @@
 [
   {
+    "id": "vendora-pos",
+    "title": "Vendora POS",
+    "category": "Full-Stack Web App",
+    "status": "In Active Deployment",
+    "description": "A modern, full-stack POS system with real-time inventory tracking and secure sales processing.",
+    "longDescription": "Vendora POS is a full-stack POS system built with Next.js, TypeScript, Express, Prisma, and PostgreSQL. It features modular architecture, secure authentication, transaction-safe sales processing, and real-time inventory tracking designed for extensibility across retail and service-based businesses.\n\nKey Features:\n▹ Modular architecture & secure authentication\n▹ Transaction-safe sales processing\n▹ Real-time inventory & stock tracking\n▹ Highly scalable for retail and service-based businesses",
+    "tech": [
+      {
+        "name": "Next.js",
+        "icon": "devicon-nextjs-plain"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "devicon-typescript-plain"
+      },
+      {
+        "name": "Express",
+        "icon": "devicon-express-original"
+      },
+      {
+        "name": "Prisma",
+        "icon": "devicon-prisma-original"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "devicon-postgresql-plain"
+      }
+    ],
+    "github": "https://github.com/QuenDev/vendor-pos",
+    "type": "desktop",
+    "comingSoon": true,
+    "images": []
+  },
+  {
     "id": "ai-career-launchpad",
     "title": "AI Career Launchpad",
     "category": "AI Web App",

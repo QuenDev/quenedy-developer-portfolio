@@ -32,9 +32,9 @@ function generateProjectCards(projects) {
       : '';
 
     const statusBadgeHtml = p.status 
-      ? `<div class="status-badge">
-                  <i class="${p.tech[4]?.icon || ''}"></i>
-                  ${p.status}
+      ? `<div class="status-badge" title="${p.status}">
+                  <i class="${p.tech[0]?.icon || ''}"></i>
+                  <span>${p.status}</span>
                 </div>`
       : '';
 
