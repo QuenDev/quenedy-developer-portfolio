@@ -362,10 +362,35 @@
   .lightbox-tech h3 { justify-content: center; }
   .lightbox-tech h3::after { display: none; }
   .source-button { margin: 0 auto; }
-  .lightbox-gallery { width: 100%; height: auto; }
+  .lightbox-gallery { width: 100%; height: auto; flex: none; }
 }
 
 @media (max-width: 768px) {
   .lightbox-btn.prev { left: 20%; bottom: -60px; top: auto; }
   .lightbox-btn.next { right: 20%; bottom: -60px; top: auto; }
+
+  .lightbox-gallery.desktop-frame {
+    border-width: 6px;
+    border-bottom-width: 20px;
+    border-radius: 12px 12px 3px 3px;
+  }
+  
+  .lightbox-gallery.desktop-frame::after {
+    bottom: -16px;
+    width: 40px;
+    height: 9px;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .lightbox-gallery.phone-frame {
+    border-width: 8px;
+    border-radius: 30px;
+  }
+
+  .lightbox-gallery.phone-frame::after {
+    top: 5px;
+    width: 70px;
+    height: 15px;
+    border-radius: 8px;
+  }
 }
