@@ -95,11 +95,8 @@
       {
         "name": "CSS3",
         "icon": "devicon-css3-plain"
-      },
-      {
-        "name": "JavaScript",
-        "icon": "devicon-javascript-plain"
       }
+    
     ],
     "github": "https://github.com/QuenDev/rfid-voucher-system",
     "type": "desktop",
